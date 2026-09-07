@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1d4ed8" />
+
+    <title>Work Hours Calculator — time between start and finish</title>
+    <meta
+      name="description"
+      content="Work out the hours between a start and end time, minus breaks, as hours-and-minutes and decimal hours for a timesheet. Handles overnight shifts, a weekly timesheet and an optional pay rate with overtime. Runs in your browser, no sign-up."
+    />
+    <link rel="canonical" href="https://hours-calculator.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Work Hours Calculator" />
+    <meta property="og:description" content="Hours between a start and finish, minus breaks — as h:mm and decimal hours. Overnight shifts, weekly timesheet, optional pay with overtime. Free." />
+    <meta property="og:url" content="https://hours-calculator.correia95.workers.dev/" />
+    <meta property="og:image" content="https://hours-calculator.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Work Hours Calculator" />
+    <meta name="twitter:description" content="Hours between a start and finish, minus breaks — as h:mm and decimal hours. Overnight shifts, weekly timesheet, optional pay." />
+    <meta name="twitter:image" content="https://hours-calculator.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Work Hours Calculator",
+        "url": "https://hours-calculator.correia95.workers.dev/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Calculate worked hours between a start and end time minus breaks, as hours and minutes and decimal hours, with overnight-shift handling, a weekly timesheet and optional pay, entirely in the browser."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I calculate hours worked between two times?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Subtract the start time from the end time, then take off any unpaid break. From 9:00 to 17:30 with a 30-minute break is 8 hours. If the shift finishes after midnight the calculator adds a day automatically."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are decimal hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The worked minutes divided by 60. 8 hours 30 minutes is 8.5 decimal hours. Most payroll and invoicing systems want the decimal figure rather than hours and minutes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I enter a time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most formats work: 9, 9:30, 9.5, 0930, 9:30 am, 5pm, 17:00. A bare number under 24 is read as an hour; a decimal is read as hours, so 9.5 means 9:30."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it handle overtime?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optionally. Add a pay rate, an overtime threshold and a multiplier, and hours above the threshold are paid at the higher rate. It is a simple threshold, not a substitute for your local overtime rules."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        This work hours calculator needs JavaScript. Enter a start and end time and it works out the
+        hours between them, minus breaks, as hours-and-minutes and decimal hours.
+      </p>
+    </noscript>
+  </body>
+</html>

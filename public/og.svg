@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0c0f13"/>
+  <circle cx="960" cy="320" r="130" fill="none" stroke="#6b9bff" stroke-width="10"/>
+  <path d="M960 320 V225 M960 320 l70 30" stroke="#6b9bff" stroke-width="10" stroke-linecap="round"/>
+  <text x="80" y="180" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="78" font-weight="800" fill="#e7ecf1" letter-spacing="-1">Work Hours Calculator</text>
+  <text x="80" y="235" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="27" fill="#94a1ad">Time between start and finish, minus breaks</text>
+  <g font-family="ui-monospace, Menlo, Consolas, monospace" font-weight="800">
+    <text x="80" y="370" font-size="56" fill="#6b9bff">8h 00m</text>
+    <text x="330" y="370" font-size="32" fill="#94a1ad">= 8.5 decimal hours</text>
+  </g>
+  <text x="80" y="470" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="24" fill="#e7ecf1">9:00 → 17:30 − 30 min break · overnight shifts · weekly timesheet</text>
+  <text x="80" y="514" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="22" fill="#94a1ad">Optional pay rate + overtime · free · no sign-up · runs in your browser</text>
+</svg>
